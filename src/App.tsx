@@ -19,7 +19,7 @@ function App() {
           <GasCalculator chain="ftm"/>
           <GasCalculator chain="metis"/>
       </div>
-      <div className="text-xs ml-auto mr-auto pt-8 md:absolute md:bottom-0 left-0 right-0">
+      <div className="text-xs ml-auto mr-auto pt-8 lg:absolute lg:bottom-0 left-0 right-0">
         <a className="text-neutral-500 hover:cursor-pointer" href="https://twitter.com/uncoolzero">An @uncoolzero Enterprises product</a>
       </div>
     </div>
