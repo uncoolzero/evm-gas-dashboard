@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@layer components {
+  .eth {
+    @apply text-[#fefeff] bg-[#63688f] border-[#63688f] hover:bg-[#8a93b2] active:bg-[#464a76]
+  }
+
+  .bsc {
+    @apply text-[#0a0d10] bg-[#e9c32d] border-[#e9c32d] hover:bg-[#fdcf16] active:bg-[#b19423]
+  }
+
+  .polygon {
+    @apply text-[#ede4fb] bg-[#8247e5] border-[#8247e5] hover:bg-[#9063dd] active:bg-[#5b25b9]
+  }
+
+  .avax {
+    @apply text-[#ede4fb] bg-[#e84142] border-[#e84142] hover:bg-[#f36767] active:bg-[#ac2626]
+  }
+
+  .arbitrumone {
+    @apply text-[#28a0f0] bg-[#2d374b] border-[#2d374b] hover:bg-[#4e6594] active:bg-[#151e30]
+  }
+
+  .cronos {
+    @apply text-[#ffffff] bg-[#002d74] border-[#002d74] hover:bg-[#144eac] active:bg-[#071c3f]
+  }
+
+  .ftm {
+    @apply text-[#fefeff] bg-[#1969ff] border-[#1969ff] hover:bg-[#19abff] active:bg-[#1147ad]
+  }
+
+  .metis {
+    @apply text-[#0b2435] bg-[#2adacc] border-[#2adacc] hover:bg-[#55f5e7] active:bg-[#1d948a]
+  }
+}
